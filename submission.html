@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submission Form</title>
+        <style>
+            * {
+                margin: 0;
+                font-family: sans-serif;
+            }
+            .page-body{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .submit-section{
+                display: flex;
+                background-color: rgb(124, 39, 39);
+                border: 1px hidden rgb(124, 39, 39);
+                border-radius: 0px 0px 100px 0px;
+                width: 100%;
+                height: 100%;
+            }
+            .image{
+                padding: 10px;
+                padding-bottom: 0px;
+            }
+            .submit-section{
+                width: 100%;
+            }
+            .description{
+                width: 50%;
+                padding: 200px 100px;
+            }
+            .description h1{
+                color: aliceblue;
+                font-size: 80px;
+                margin: 0px;
+            }
+            .description h3{
+                font-size: 25px;
+                color: rgb(26, 26, 26);
+            }
+            .form{
+                width: 65%;
+                padding-top: 30px;
+                padding-right: 40px;
+            }
+            .award-text p{
+                color: white;
+                font-size: 13px;
+                line-height: 30px;
+            }
+            input:focus, textarea:focus{
+                outline: 0 !important;
+            }
+            input[type=text] ,input[type=email]{
+                width: 90%;
+                padding: 12px;
+                margin: 10px;
+                color: aliceblue;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: rgb(124, 39, 39);
+            }
+            input[type=text]:focus {
+                border: 3px solid rgb(116, 94, 241);
+            }
+            input[type=email]:focus {
+                border: 3px solid rgb(116, 94, 241);
+            }
+            textarea{
+                width: 90%;
+                padding: 12px;
+                margin: 10px;
+                max-width: 10;
+                font-size: 15px;
+                color: aliceblue;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: rgb(124, 39, 39);
+            }
+            textarea:focus {
+                border: 3px solid rgb(151, 69, 206);
+            }
+            input[type=submit]{
+                padding: 15px;
+                border: none;
+                font-size: 15px;
+                border-radius: 5px;
+            }
+            .checkbox{
+                padding-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-body">
+            <section class="from-img">
+                <div class="image">
+                    <img src="logo.png" alt="" width="12%">
+                </div>
+                <div class="submit-section">
+                    <div class="description">
+                        <h1>Submission</h1>
+                        <p>All details of submission will be kept strickly private and confidential by Maliman and will not be used for any purpose other than judging Red Card 2018 winner</p>
+                        <h3>Application will close on the 15th December 2017</h3>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                        <div class="name-form">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Enter Name">
+                        </div>
+                        <div class="email-form">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="org-form">
+                            <label for="org"></label>
+                            <input type="text" id="org" name="Organization name" placeholder="Your Organization">
+                        </div>
+                        <div class="award-text">
+                            <h1>Which Award</h1>
+                            <p><small>(Please tick and provide details for all of the awards you would like to be nominated for)</small></p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="livestream">
+                            <label for="livestream">Best livestream</label>
+                        </div>
+                        <div class="textarea-stream">
+                            <textarea name="livestream" id="livestream" placeholder="Description and Results(max 150 words)"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="Best-Tour">
+                            <label for="Best-Tour">Best Tour Compaign</label>
+                        </div>
+                        <div class="textarea-tour">
+                            <textarea name="Best-Tour" id="Best-Tour" placeholder="Description and Results(max 150 words)"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="sponsor">
+                            <label for="sponsor">Best Sponsor Activation</label>
+                        </div>
+                        <div class="textarea-sponsor">
+                            <textarea name="sponsor" id="sponsor" placeholder="Description and Results(max 150 words)"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="tech">
+                            <label for="tech">Best Use of Technology</label>
+                        </div>
+                        <div class="textarea-tech">
+                            <textarea name="Technology" id="tech" placeholder="Description and Results(max 150 words)"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="campaign">
+                            <label for="campaign">Best Online Campaign</label>
+                        </div>
+                        <div class="textarea-campaign">
+                            <textarea name="Online Campaign" id="campaign" placeholder="Description and Results(max 150 words)"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Submit Successfully">
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
